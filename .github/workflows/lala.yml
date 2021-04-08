@@ -23,8 +23,10 @@ jobs:
         run: brew install git-annex
         if: matrix.os == 'macos-latest'
 
-      - run: pip install cram
+      - run: pip3 install cram
 
       - run: ls /usr/local/bin
 
       - run: which git-annex
+
+      - run: which cram
